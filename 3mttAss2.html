@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: #f4f4f4;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            background: #e9ecef;
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            margin: 1rem;
+            padding: 1rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #343a40;
+            color: #fff;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome to Our Product</h1>
+        <p>Discover the best solution for your needs with our product.</p>
+        <a href="#" class="cta-button">Learn More</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/50" alt="Feature 1">
+            <h3>Feature One</h3>
+            <p>Short description of feature one.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/50" alt="Feature 2">
+            <h3>Feature Two</h3>
+            <p>Short description of feature two.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/50" alt="Feature 3">
+            <h3>Feature Three</h3>
+            <p>Short description of feature three.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
